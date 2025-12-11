@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react'
-import ContactSideBar from '../../Components/ContactSideBar/ContactSideBar'
+import ContactSidebar from '../../Components/ContactSidebar/ContactSidebar'
 import { useParams } from 'react-router'
 import { getContactById } from '../../services/contactService'
 import { useContext } from 'react'
@@ -15,7 +15,7 @@ export default function MessagesScreen() {
     return (
     <div>
         <h1>Pantalla de mensajes</h1>
-        <ContactSideBar/>
+        <ContactSidebar/>
         {
             loadingContact
             ? <div>Cargando...</div>
