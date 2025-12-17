@@ -20,6 +20,26 @@ const ContactListContextProvider = () => {
         )
     }
 
+    function getContactById (contact_id) {
+        for(const contact of contactState){
+            if(Number(contact.contact_id) === Number(contact_id)){
+                return contact
+            }
+        }
+    }
+
+    function updateContactById (contact_to_update, contact_id){
+        const new_contact_list = contactState.map(
+            (contact) => {
+                if(Number(contact.contact_id) === Number(contact_id)){
+                    return contact_to_update
+                }
+                return contact 
+            }
+        )
+        setContactState(new_contact_list)
+    }
+
     useEffect (
         loadContactList,
         []
@@ -28,7 +48,9 @@ const ContactListContextProvider = () => {
     const providerValues = {
         contactState,
         loadContactList,
-        loadingContactsState
+        loadingContactsState,
+        getContactById,
+        updateContactById
     }
 
     return (
