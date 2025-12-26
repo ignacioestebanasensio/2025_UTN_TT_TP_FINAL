@@ -1,26 +1,26 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 
-.contact-sidebar-container{
+.contact-sidebar-container {
     display: flex;
     flex-direction: row;
 }
 
-.header{
+.header {
     display: flex;
     flex-direction: row;
     min-height: 100vh;
 }
 
-.aside-header{
-    display:flex;
+.aside-header {
+    display: flex;
     flex-direction: column;
     justify-content: space-between;
-    padding: 15px;
-    background-color:#1d1f1f;
+    padding: 20px;
+    background-color: #1d1f1f;
     color: #aba8a8;
 }
 
-.aside-header-upper-icons{
+.aside-header-upper-icons {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -28,7 +28,8 @@
     gap: 15px;
 }
 
-.aside-header-lower-icons{
+
+.aside-header-lower-icons {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -36,14 +37,14 @@
     gap: 15px;
 }
 
-.my-profile-icon{
+.my-profile-icon {
     width: 30px;
     height: 30px;
     border-radius: 50%;
     object-fit: cover;
 }
 
-.upper-header{
+.upper-header {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -53,25 +54,26 @@
     color: white;
 }
 
-.whatsapp-icon{
+.whatsapp-icon {
     display: flex;
     flex-direction: row;
+    height: 35px;
 }
 
-.all-header-icons{
+.all-header-icons {
     display: flex;
     flex-direction: row;
     align-items: center;
 }
 
-.header-icons{
+.header-icons {
     display: flex;
     flex-direction: row;
     align-items: center;
     gap: 10px;
 }
 
-.search-bar{
+.search-bar {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -86,7 +88,9 @@
     color: #aba8a8;
 }
 
-.chat-filters{
+
+
+.chat-filters {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -95,7 +99,7 @@
     color: #aba8a8;
 }
 
-.filter{
+.filter {
     padding: 10px 20px;
     border: #242525 solid;
     border-radius: 50px;
@@ -104,15 +108,30 @@
     font-weight: 800;
 }
 
-.filter:hover{
+.filter:hover {
     background-color: #2e2f2f;
     transition: background-color 0.3s ease;
 }
 
-.contact-sidebar{
+.contact-sidebar {
     display: flex;
     flex-direction: column;
     padding-left: 15px;
     padding-right: 15px;
     padding-top: 5px;
+    min-width: 450px;
+}
+
+.whatsapp-icon svg {
+    height: 35px;
+    width: auto;
+}
+
+.icon{
+    cursor: pointer;
+    border-radius: 100%;
+}
+
+.icon:hover{
+    background-color: #aba8a8;
 }

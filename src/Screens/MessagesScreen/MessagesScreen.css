@@ -13,14 +13,14 @@
     flex-grow: 1;
     min-width: 0;
     position: relative;
-    background-color: #0b141a;
+    background-color: #161717;
     /* Dark background behind doodle */
 }
 
 /* Chat Header Styles */
 .chat-header {
-    height: 60px;
-    background-color: #202c33;
+    height: 70px;
+    background-color: #161717;
     display: flex;
     align-items: center;
     justify-content: space-between;

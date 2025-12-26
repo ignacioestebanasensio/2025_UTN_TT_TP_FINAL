@@ -28,30 +28,23 @@ export default function AddNewMessage() {
     return (
         <div className='new-message-container'>
             <div className='action-icon'>
-                {/* Plus Icon */}
                 <svg viewBox="0 0 24 24" height="24" width="24" preserveAspectRatio="xMidYMid meet" class="" fill="currentColor" enable-background="new 0 0 24 24"><title>plus</title><path d="M20 11.25H12.75V4h-1.5v7.25H4v1.5h7.25V20h1.5v-7.25H20v-1.5Z"></path></svg>
             </div>
 
             <form className='form-new-message' onSubmit={handleSubmitNewMessage}>
-                {/* Emoji Icon placeholder or actual if needed, putting generic smiley for now */}
-                {/* <div className='action-icon' style={{marginRight: 10}}>
-                     <svg viewBox="0 0 24 24" height="24" width="24" ...><path .../></svg>
-                </div> */}
                 <input
                     className='message-input'
                     type="text"
                     placeholder="Type a message"
                     value={messageText}
                     onChange={(e) => setMessageText(e.target.value)}
-                    // onKeyDown={handleKeyDown} // Optional: Enable enter to send
                     name="mensaje"
                     autoComplete="off"
                 />
             </form>
 
-            <div className='action-icon' onClick={handleSendMessage} role="button" tabIndex={0}>
-                {/* Send Icon */}
-                <svg viewBox="0 0 24 24" height="24" width="24" preserveAspectRatio="xMidYMid meet" class="" fill="currentColor" enable-background="new 0 0 24 24"><title>send</title><path d="M2.01 21L23 12 2.01 3 2 10l15 2-15 2z"></path></svg>
+            <div className='send-icon' onClick={handleSendMessage} role="button" tabIndex={0}>
+                <svg viewBox="0 0 24 24" height="24" width="24" preserveAspectRatio="xMidYMid meet" class="" fill="none"><title>wds-ic-send-filled</title><path d="M5.4 19.425C5.06667 19.5583 4.75 19.5291 4.45 19.3375C4.15 19.1458 4 18.8666 4 18.5V14L12 12L4 9.99997V5.49997C4 5.1333 4.15 4.85414 4.45 4.66247C4.75 4.4708 5.06667 4.44164 5.4 4.57497L20.8 11.075C21.2167 11.2583 21.425 11.5666 21.425 12C21.425 12.4333 21.2167 12.7416 20.8 12.925L5.4 19.425Z" fill="currentColor"></path></svg>
             </div>
         </div>
     )
