@@ -97,6 +97,19 @@
     gap: 10px;
     padding: 10px;
     color: #aba8a8;
+    overflow-x: auto;
+    /* Allow horizontal scrolling */
+    white-space: nowrap;
+    /* Prevent wrapping */
+    -ms-overflow-style: none;
+    /* IE and Edge */
+    scrollbar-width: none;
+    /* Firefox */
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+.chat-filters::-webkit-scrollbar {
+    display: none;
 }
 
 .filter {
@@ -127,11 +140,30 @@
     width: auto;
 }
 
-.icon{
+.icon {
     cursor: pointer;
     border-radius: 100%;
 }
 
-.icon:hover{
+
+.icon:hover {
     background-color: #aba8a8;
+}
+
+@media (max-width: 750px) {
+    .contact-sidebar {
+        min-width: 0;
+        width: 100%;
+        padding: 5px;
+    }
+
+    /* User requested to hide the rail on mobile (< 750px) */
+    .aside-header {
+        display: none;
+        padding: 5px;
+    }
+
+    .contact-sidebar-container {
+        width: 100%;
+    }
 }

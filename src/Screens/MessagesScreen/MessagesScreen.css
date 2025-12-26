@@ -76,3 +76,31 @@
 .header-actions svg {
     cursor: pointer;
 }
+
+.back-button-container {
+    display: none;
+    margin-right: 10px;
+}
+
+.back-button {
+    display: flex;
+    align-items: center;
+    color: #d1d7db;
+    text-decoration: none;
+}
+
+@media (max-width: 750px) {
+
+    /* Hide ContactSidebar when in Chat/Messages Screen on mobile */
+    .messages-screen-container>.contact-sidebar-container {
+        display: none;
+    }
+
+    .back-button-container {
+        display: flex;
+    }
+
+    .chat-interface {
+        width: 100%;
+    }
+}

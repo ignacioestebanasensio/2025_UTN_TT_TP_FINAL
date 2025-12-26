@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import ContactSidebar from '../../Components/ContactSidebar/ContactSidebar'
-import { useParams } from 'react-router'
+import { useParams, Link } from 'react-router'
 import { getContactById } from '../../services/contactService'
 import { useContext } from 'react'
 import { ContactDetailContext } from '../../Context/ContactDetailContext'
@@ -13,7 +13,7 @@ export default function MessagesScreen() {
         contactSelected,
     } = useContext(ContactDetailContext)
 
-    const {loadingContactsState} = useContext(ContactListContext)
+    const { loadingContactsState } = useContext(ContactListContext)
 
     return (
         <div className='messages-screen-container'>
@@ -24,8 +24,15 @@ export default function MessagesScreen() {
                         ? <div style={{ color: "white", padding: 20 }}>Cargando...</div>
                         : <>
                             <header className='chat-header'>
+
                                 <div className='header-contact-info'>
+                                    <div className='back-button-container'>
+                                        <Link to="/" className='back-button'>
+                                            <svg viewBox="0 0 24 24" height="24" width="24" preserveAspectRatio="xMidYMid meet" class="" fill="currentColor" enable-background="new 0 0 24 24"><title>back</title><path d="M12 4l-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8z" transform="rotate(180 12 12)"></path></svg>
+                                        </Link>
+                                    </div>
                                     <div className='header-avatar-container'>
+
                                         <img
                                             src={contactSelected.contact_avatar}
                                             alt={contactSelected.contact_name}

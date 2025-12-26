@@ -37,7 +37,6 @@
     background-color: #2e2f2f;
     color: #d1d7db;
     outline: none;
-    resize: none;
     /* If using textarea */
     height: 42px;
     /* Fixed height for single line feel, adjust if textarea auto-expands */
