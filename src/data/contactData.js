@@ -4,20 +4,20 @@ let contact_data = [
         contact_name: "Martina",
         contact_avatar: "https://img.freepik.com/foto-gratis/satisfecho-joven-morena-caucasica-mira-camara_141793-103873.jpg?semt=ais_hybrid&w=740&q=80",
         contact_unseen_messages: 5,
-        last_message_content: "Testing",
+        last_message_content: "No es nada!",
         last_message_state: "RECEIVED",
         last_message_created_at: new Date(),
         messages: [
             {
                 message_id: 1,
-                message_content: "Qué tal?",
+                message_content: "Gracias!",
                 message_state: "SEEN",
                 message_created_at: new Date(),
                 send_by_me: true
             },
             {
                 message_id: 2,
-                message_content: "Todo bien?",
+                message_content: "No es nada!",
                 message_state: "SEEN",
                 message_created_at: new Date(),
                 send_by_me: false

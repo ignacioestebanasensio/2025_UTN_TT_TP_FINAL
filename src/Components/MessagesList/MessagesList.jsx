@@ -15,7 +15,7 @@ const MessagesList = () => {
                                 <div className='message-content-wrapper'>
                                     <p className='message-text'>{message.message_content}</p>
                                     <div className='message-meta'>
-                                        <span className='message-time'>
+                                        <span>
                                             {new Date(message.message_created_at).toLocaleTimeString([], { hour: '2-digit', minute: '2-digit', hour12: false })}
                                         </span>
                                         {isSentByMe && (

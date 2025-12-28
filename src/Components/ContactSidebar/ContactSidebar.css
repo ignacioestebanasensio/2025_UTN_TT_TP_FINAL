@@ -8,7 +8,7 @@
 .header {
     display: flex;
     flex-direction: row;
-    min-height: 100vh;
+    height: 100vh;
 }
 
 .aside-header {
@@ -28,6 +28,12 @@
     gap: 15px;
 }
 
+.aside-header-upper-icons svg:hover{
+    background-color: #6d6a6a;
+    cursor: pointer;
+    border-radius: 50%;
+    transition: background-color 0.3s ease;
+}
 
 .aside-header-lower-icons {
     display: flex;
@@ -35,6 +41,12 @@
     justify-content: center;
     align-items: center;
     gap: 15px;
+}
+.aside-header-lower-icons svg:hover{
+    background-color: #6d6a6a;
+    cursor: pointer;
+    border-radius: 50%;
+    transition: background-color 0.3s ease;
 }
 
 .my-profile-icon {
@@ -60,17 +72,18 @@
     height: 35px;
 }
 
-.all-header-icons {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-}
-
 .header-icons {
     display: flex;
     flex-direction: row;
     align-items: center;
     gap: 10px;
+}
+
+.header-icons svg:hover {
+    background-color: #6d6a6a;
+    cursor: pointer;
+    border-radius: 50%;
+    transition: background-color 0.3s ease;
 }
 
 .search-bar {
@@ -79,16 +92,11 @@
     align-items: center;
     gap: 10px;
     background-color: #2e2f2f;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    padding-left: 20px;
-    padding-right: 60px;
+    padding: 10px 60px 10px 20px;
     border-radius: 100px;
     font-size: 14px;
     color: #aba8a8;
 }
-
-
 
 .chat-filters {
     display: flex;
@@ -97,19 +105,6 @@
     gap: 10px;
     padding: 10px;
     color: #aba8a8;
-    overflow-x: auto;
-    /* Allow horizontal scrolling */
-    white-space: nowrap;
-    /* Prevent wrapping */
-    -ms-overflow-style: none;
-    /* IE and Edge */
-    scrollbar-width: none;
-    /* Firefox */
-}
-
-/* Hide scrollbar for Chrome, Safari and Opera */
-.chat-filters::-webkit-scrollbar {
-    display: none;
 }
 
 .filter {
@@ -129,25 +124,13 @@
 .contact-sidebar {
     display: flex;
     flex-direction: column;
-    padding-left: 15px;
-    padding-right: 15px;
-    padding-top: 5px;
-    min-width: 450px;
+    padding: 6px 16px;
+    min-width: 350px;
 }
 
 .whatsapp-icon svg {
     height: 35px;
     width: auto;
-}
-
-.icon {
-    cursor: pointer;
-    border-radius: 100%;
-}
-
-
-.icon:hover {
-    background-color: #aba8a8;
 }
 
 @media (max-width: 750px) {
@@ -157,27 +140,23 @@
         padding: 5px;
     }
 
-    /* User requested to hide the rail on mobile (< 750px) */
     .aside-header {
         display: none;
-        padding: 5px;
     }
 
     .contact-sidebar-container {
         width: 100%;
     }
 
-    /* Show all filters without scroll on mobile - wrap them */
     .chat-filters {
         overflow-x: visible;
         flex-wrap: wrap;
-        gap: 7px;
-        padding: 7px;
+        gap: 8px;
+        padding: 8px;
     }
 
     .filter {
-        flex-shrink: 0;
         padding: 8px 16px;
-        font-size: 11px;
+        font-size: 10px;
     }
 }

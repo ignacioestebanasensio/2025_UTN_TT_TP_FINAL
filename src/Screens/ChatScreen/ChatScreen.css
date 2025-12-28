@@ -12,11 +12,9 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    flex-grow: 1;
+    width: 100%;
     background-color: #161717;
     position: relative;
-    border-bottom: 6px solid #25d366;
-    border-bottom: none;
 }
 
 .chat-screen-upper-content {
@@ -24,22 +22,15 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    max-width: 560px;
     text-align: center;
 }
 
 .chat-screen-upper-content img {
-    /* Assuming this is the illustration */
     height: auto;
     width: 320px;
     max-width: 100%;
-    /* Ensure it doesn't overflow on smaller screens */
-    /* Approximate size from image */
     margin-bottom: 0px;
 }
-
-/* Note: The user's code had <img src={whatsappIllustration} ... />. 
-   If the svg comes with intrinsic size, we might need to adjust. */
 
 .download-title {
     font-size: 32px;
@@ -75,11 +66,7 @@
     align-items: center;
     gap: 10px;
     color: #667781;
-    font-size: 13px;
-}
-
-.encrypted-footer svg {
-    fill: #667781;
+    font-size: 14px;
 }
 
 @media (max-width: 750px) {

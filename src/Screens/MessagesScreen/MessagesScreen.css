@@ -14,10 +14,8 @@
     min-width: 0;
     position: relative;
     background-color: #161717;
-    /* Dark background behind doodle */
 }
 
-/* Chat Header Styles */
 .chat-header {
     height: 70px;
     background-color: #161717;
@@ -56,12 +54,11 @@
 .header-contact-name {
     color: #e9edef;
     font-size: 16px;
-    line-height: normal;
 }
 
 .header-status-text {
     color: #8696a0;
-    font-size: 10px;
+    font-size: 12px;
     margin-top: 2px;
 }
 
@@ -72,7 +69,6 @@
     color: #aebac1;
 }
 
-/* SVG Icons Styles */
 .header-actions svg {
     cursor: pointer;
     width: 20px;
@@ -81,25 +77,23 @@
 
 .back-button-container {
     display: none;
-    margin-right: 10px;
 }
 
 .back-button {
     display: flex;
     align-items: center;
     color: #d1d7db;
-    text-decoration: none;
 }
 
 @media (max-width: 750px) {
 
-    /* Hide ContactSidebar when in Chat/Messages Screen on mobile */
     .messages-screen-container>.contact-sidebar-container {
         display: none;
     }
 
     .back-button-container {
         display: flex;
+        margin-right: 10px;
     }
 
     .chat-interface {

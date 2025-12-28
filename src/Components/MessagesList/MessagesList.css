@@ -1,28 +1,12 @@
 .messages-list-container {
-    flex-grow: 1;
     overflow-y: auto;
-    padding: 10px 5%;
-    /* Reduced side padding (was 9%) */
+    padding: 15px;
     display: flex;
     flex-direction: column;
     gap: 2px;
+    flex-grow: 1;
     background-image: url(https://i.pinimg.com/736x/2b/60/94/2b609488b4711e06e40a213e24e55d77.jpg);
-    background-repeat: repeat;
     background-size: contain;
-
-    background-blend-mode: overlay;
-}
-
-.messages-list-container::-webkit-scrollbar {
-    width: 6px;
-}
-
-.messages-list-container::-webkit-scrollbar-track {
-    background: transparent;
-}
-
-.messages-list-container::-webkit-scrollbar-thumb {
-    background-color: rgba(134, 150, 160, 0.3);
 }
 
 .message-row {
@@ -30,7 +14,6 @@
     width: 100%;
     margin-bottom: 2px;
     padding: 0 10px;
-    /* Slight side padding */
 }
 
 .message-row.sent {
@@ -43,30 +26,28 @@
 
 .message-bubble {
     padding: 6px 7px 8px 9px;
-    border-radius: 7.5px;
-    font-size: 14.2px;
-    line-height: 19px;
+    border-radius: 7px;
+    font-size: 14px;
+    line-height: 20px;
     color: #e9edef;
     position: relative;
-
-    min-width: fit-content;
-
+    width: fit-content;
+    max-width: 100%;
     overflow-wrap: break-word;
-    /* Modern standard */
-    word-break: break-word;
-    /* Ensure long words break */
-    box-shadow: 0 1px 0.5px rgba(11, 20, 26, .13);
 }
 
-/* Sent Bubble Styles */
 .message-row.sent .message-bubble {
     background-color: #005c4b;
     border-top-right-radius: 0;
     margin-right: 8px;
-    /* Space for tail */
 }
 
-/* Sent Tail */
+.message-row.received .message-bubble {
+    background-color: #202c33;
+    border-top-left-radius: 0;
+    margin-left: 8px;
+}
+
 .message-row.sent .message-bubble::after {
     content: "";
     position: absolute;
@@ -77,18 +58,8 @@
     border-top: 10px solid #005c4b;
     border-left: none;
     border-right: 10px solid transparent;
-    /* This creates a sharp tailored corner look */
 }
 
-/* Received Bubble Styles */
-.message-row.received .message-bubble {
-    background-color: #202c33;
-    border-top-left-radius: 0;
-    margin-left: 8px;
-    /* Space for tail */
-}
-
-/* Received Tail */
 .message-row.received .message-bubble::before {
     content: "";
     position: absolute;
@@ -100,41 +71,29 @@
     border-left: 10px solid transparent;
 }
 
-
-
-/* Layout fix for text and time wrapping */
 .message-content-wrapper {
     display: block;
-    /* Ensure it is block to allow float to work properly inside */
 }
 
 .message-text {
-    margin: 0;
     display: inline;
-    /* Text is inline */
 }
 
 .message-meta {
     float: right;
     margin-top: 4px;
-    /* Slight push down to align with baseline of text if strictly inline */
     margin-left: 20px;
-    /* Gap between text and time */
     display: inline-flex;
-    /* Use inline-flex to float nicely */
     align-items: center;
     gap: 3px;
     height: 15px;
-    /* Fixed height to keep it tight */
     font-size: 11px;
     color: rgba(233, 237, 239, 0.6);
     position: relative;
-    top: 3px;
-    /* Visual adjustment */
+    top: 4px;
 }
 
 .message-meta svg {
     color: #53bdeb;
-    /* Read receipt blue */
 }
 

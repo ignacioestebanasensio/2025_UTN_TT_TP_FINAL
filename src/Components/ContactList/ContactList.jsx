@@ -1,5 +1,4 @@
 import React, { useContext } from 'react'
-
 import { Link } from 'react-router'
 import { ContactListContext } from '../../Context/ContactListContext'
 import "./ContactList.css"
