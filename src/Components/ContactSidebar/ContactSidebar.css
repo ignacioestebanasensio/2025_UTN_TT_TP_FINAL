@@ -166,4 +166,18 @@
     .contact-sidebar-container {
         width: 100%;
     }
+
+    /* Show all filters without scroll on mobile - wrap them */
+    .chat-filters {
+        overflow-x: visible;
+        flex-wrap: wrap;
+        gap: 7px;
+        padding: 7px;
+    }
+
+    .filter {
+        flex-shrink: 0;
+        padding: 8px 16px;
+        font-size: 11px;
+    }
 }

@@ -32,7 +32,6 @@ export default function MessagesScreen() {
                                         </Link>
                                     </div>
                                     <div className='header-avatar-container'>
-
                                         <img
                                             src={contactSelected.contact_avatar}
                                             alt={contactSelected.contact_name}

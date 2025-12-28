@@ -48,8 +48,13 @@
     line-height: 19px;
     color: #e9edef;
     position: relative;
-    max-width: 65%;
-    word-wrap: break-word;
+
+    min-width: fit-content;
+
+    overflow-wrap: break-word;
+    /* Modern standard */
+    word-break: break-word;
+    /* Ensure long words break */
     box-shadow: 0 1px 0.5px rgba(11, 20, 26, .13);
 }
 
@@ -133,7 +138,3 @@
     /* Read receipt blue */
 }
 
-/* Ensuring font consistency */
-* {
-    font-family: 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-}

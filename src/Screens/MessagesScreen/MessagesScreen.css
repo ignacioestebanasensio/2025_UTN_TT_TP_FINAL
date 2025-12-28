@@ -61,20 +61,22 @@
 
 .header-status-text {
     color: #8696a0;
-    font-size: 13px;
+    font-size: 10px;
     margin-top: 2px;
 }
 
 .header-actions {
     display: flex;
     align-items: center;
-    gap: 20px;
+    gap: 10px;
     color: #aebac1;
 }
 
 /* SVG Icons Styles */
 .header-actions svg {
     cursor: pointer;
+    width: 20px;
+    height: 20px;
 }
 
 .back-button-container {

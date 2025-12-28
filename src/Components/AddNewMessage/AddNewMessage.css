@@ -1,25 +1,21 @@
 .new-message-container {
-    height: 62px;
+    height: 60px;
     display: flex;
     align-items: center;
-    padding: 10px 16px;
+    padding: 10px 15px;
     gap: 10px;
-    flex-shrink: 0;
     z-index: 100;
 }
 
 .action-icon {
     color: #8696a0;
     cursor: pointer;
-    flex-shrink: 0;
 }
 
 .send-icon {
     color: white;
     cursor: pointer;
-    flex-shrink: 0;
 }
-
 
 .form-new-message {
     flex-grow: 1;
@@ -31,18 +27,11 @@
     width: 100%;
     border-radius: 20px;
     border: none;
-    padding: 9px 12px 11px;
-    margin: 5px 0;
+    padding: 10px 12px;
     font-size: 15px;
     background-color: #2e2f2f;
     color: #d1d7db;
     outline: none;
-    /* If using textarea */
-    height: 42px;
-    /* Fixed height for single line feel, adjust if textarea auto-expands */
+    height: 40px;
     line-height: 20px;
-}
-
-.message-input::placeholder {
-    color: #8696a0;
 }
