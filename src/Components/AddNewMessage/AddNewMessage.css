@@ -9,11 +9,13 @@
 
 .action-icon {
     color: #8696a0;
-    cursor: pointer;
 }
 
 .send-icon {
     color: white;
+}
+
+.action-icon, .send-icon {
     cursor: pointer;
 }
 

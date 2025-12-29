@@ -29,7 +29,7 @@ let contact_data = [
         contact_name: "Jorge",
         contact_avatar: "https://thumbs.dreamstime.com/b/retrato-al-aire-libre-de-una-persona-sonriente-vestida-casualmente-cerca-un-edificio-moderno-con-atuendo-casual-sonriendo-397911696.jpg",
         contact_unseen_messages: 0,
-        last_message_content: "Todo bien y vos?",
+        last_message_content: "Todo bien?",
         last_message_state: "SEEN",
         last_message_created_at: new Date(),
         messages: [
